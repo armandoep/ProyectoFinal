@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <title>Recargos</title>
+</head>
+<body>
+    <!-- Header de la pagina -->
+    <header id="header">
+        <h1 id="titulo">Seguros TK-U</h1>
+    </header>
+
+    <div id="container">
+        <div id="usuario">
+        <form id="datos">
+            <h2>Por favor ingrese sus datos</h2>
+            <h4 id="datosRequeridos"><span>*</span> son datos OBLIGATORIOS</h4>
+            <p id="nombre1">Nombre <span>*</span></p>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre completo" required><br/>
+            <p id="fecha1">Fecha de nacimiento <span>*</span></p>
+            <input type="date" id="fecha" required><br/>
+            <label></label><input type="checkbox" id="conyuge">¿Tiene conyuge? <br>Edad de su pareja</label><br/>
+            <input type="number" id="pareja" disabled="disabled" placeholder="Edad de su pareja"><br>
+            <label><input type="checkbox" id="hijos">¿Tiene hijos? <br>Cantidad de hijos menores a 21 años</label><br>
+            <input type="number" id="children" disabled="disabled" placeholder="Cantidad de hijos"><br>
+            <input type="button" value="Enviar" id="boton">
+            <input type="reset" value="Borrar" id="btnBorrar">
+            
+        </form>
+
+    </div>
+
+   
+    <div id="resultados">
+        <h1 id="marcaSeguro">Seguros TK-U</h1>
+        <h3 id="nombreUsuario"></h3>
+        <h4 id="saludo">Gracias por confiar en nosotros</h4>
+        <h5 id="dolares">Cantidades en dolares ($)</h5>
+        <table>
+            <tr>
+                <th id="cargos"></th>
+                <th id="total"></th>
+            </tr>
+            <tr>
+                <td id="cargonormal"></td>
+                <td id="cargonormalNumber"></td>
+            </tr>
+            <tr>
+                <td id="comision"></td>
+                <td id="comisionNumber"></td>
+            </tr>
+            <tr>
+                <td id="cargoedad"></td>
+                <td id="cargoedadNumber"></td>
+            </tr>
+            <tr>
+                <td id="cargopareja"></td>
+                <td id="cargoparejaNumber"></td>
+            </tr>
+            <tr>
+                <td id="cargohijos"></td>
+                <td id="cargohijosNumber"></td>
+            </tr>
+            <tr>
+                <th id="totalapagar"></th>
+                <td id="totalapagarNumber"></td>
+            </tr>
+        </table>
+        <div id="botones">
+            <input type="button" value="Imprimir" id="btnImprimir">
+            <input type="button" value="Rehacer" id="rehacer">
+        </div>
+    </div>
+</div>
+
+<script src="proyecto.js"></script> 
+</body>
+</html>
